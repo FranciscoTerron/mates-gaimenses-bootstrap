@@ -1,0 +1,38 @@
+/* Barra De Navegacion */
+header {
+    top: 0;
+    position: sticky;
+    z-index: 5;
+    font-family: monospace;
+
+    .navbarColor {
+        background-color: #47a8bd;
+
+        .navbar-collapse {
+            list-style: none;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            font-size: 20px;
+            margin: 20px;
+
+
+            ul {
+                .nav-item {
+                    .nav-link {
+                        color: white;
+                    }
+
+                    &:hover {
+                        font-weight: bold;
+                        color: rgb(2, 1, 1) !important;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}

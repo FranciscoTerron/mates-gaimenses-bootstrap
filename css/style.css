@@ -1,151 +1,128 @@
-body {
-    background-color: #ecead9;
-    font-family: 'Montserrat', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Barra De Navegacion */
 header {
-    top: 0;
-    position: sticky;
-    z-index: 5;
-    font-family: monospace;
+  top: 0;
+  position: sticky;
+  z-index: 5;
+  font-family: monospace;
 }
 
-.navbarColor {
-    background-color: #47a8bd;
+header .navbarColor {
+  background-color: #47a8bd;
 }
 
-
-.navbar-collapse {
-    list-style: none;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    font-size: 24px;
+header .navbarColor .navbar-collapse {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 20px;
+  margin: 20px;
 }
 
-.navbarSombra :hover {
-    font-weight: bold;
-    color: black;
+header .navbarColor .navbar-collapse ul .nav-item .nav-link {
+  color: white;
+}
+
+header .navbarColor .navbar-collapse ul .nav-item:hover {
+  font-weight: bold;
+  color: #020101 !important;
 }
 
 main {
-    min-height: 464px;
-    width: 100%;
+  min-height: 80vh;
+  width: 100%;
 }
 
-
-/* Secciones -> Cartas */
-
-.contenedorSecciones {
-    width: 100%;
-    min-height: 464px;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+main .contenedorSecciones {
+  width: 100%;
+  min-height: 464px;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-
-.card-body {
-    display: flex;
-    justify-content: center;
+main .contenedorSecciones .card .card-body {
+  display: flex;
+  justify-content: center;
 }
 
-
-/* BLOG */
-
-.colorTitulo {
-    color: rgb(0, 204, 255);
+main .contendorSecciones .contenedorContenido {
+  display: flex;
+  align-items: center;
 }
 
-/* Quienes Somos */
-
-.contenedorSecciones .contenedorContenido {
-    display: flex;
-    align-items: center;
+main .contendorSecciones .contenedorContenido2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
 
-.contenedorSecciones .contenedorContenido2 {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+main .textoPrincipal .colorTitulo {
+  color: #00ccff;
 }
 
-/* Contacto */
-
-.colorFondo {
-    background-color: #3862e0;
-    border: none;
-    border-radius: 1%;
+main .colorFondo {
+  background-color: #3862e0;
+  border: none;
+  border-radius: 1%;
 }
 
-.colorBoton {
-    background-color: #5171ff;
-    color: white;
+main .contenedorSecciones section .colorTitulo {
+  color: #00ccff;
 }
-
-.colorBoton:hover {
-    background-color: black;
-    color: white;
-}
-
-.cartaTienda {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Footer */
-
 
 .footer {
-    background-color: #1E3888;
-    height: 100%;
+  background-color: #1E3888;
+  height: 100%;
 }
 
 .footer p {
-    color: #ffffff;
-    text-align: center;
-    font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 22px;
 }
 
-.footer ul {
+.footer .footerList ul {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+}
+
+.footer .footerList ul .logoInstagram {
+  height: 69px;
+}
+
+@media (max-width: 910px) {
+
+  .contenedorSecciones,
+  .contenedorContenido {
     display: flex;
-    width: 500px;
-    margin: 0 auto;
-    justify-content: space-around;
-    list-style: none;
-    align-items: center;
+    flex-direction: column;
+  }
+
+  .navbar-collapse {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
 }
 
-.logoInstagram {
-    height: 69px;
-}
+@media (max-width: 637px) {
+  .footer ul {
+    width: 196px;
+  }
 
-/* Tuve que usar una mediaQuerys para el footer porque sino se me desparramaban las redes sociales y agregarles un margin a las cards sino
-se me juntaban todas y no quedaba prolijo*/
-
-@media (max-width : 910px) {
-
-    .contenedorSecciones,
-    .contenedorContenido {
-        display: flex;
-        flex-direction: column;
-    }
-
-}
-
-
-@media (max-width : 637px) {
-    .footer ul {
-        width: 196px;
-    }
-
-    .contenedorSecciones,
-    .card {
-        margin: 15px;
-    }
-
-
+  .contenedorSecciones,
+  .card {
+    margin: 15px;
+  }
 }

@@ -1,0 +1,28 @@
+@media (max-width : 910px) {
+
+    .contenedorSecciones,
+    .contenedorContenido {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-collapse {
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media (max-width : 637px) {
+    .footer ul {
+        width: 196px;
+    }
+
+    .contenedorSecciones,
+    .card {
+        margin: 15px;
+    }
+
+
+}

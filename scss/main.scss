@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Hojas parciales
+@import '../scss/cosasGenerales/barra-de-navegacion';
+@import './secciones/index';
+@import './secciones/quienesSomos';
+@import './secciones/contacto';
+@import './secciones/blog';
+@import '../scss/cosasGenerales/pie-de-pagina';
+@import './cosasGenerales/mediaQuerys';
